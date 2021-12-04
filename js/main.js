@@ -25,7 +25,7 @@ btn_purchase.addEventListener("click", () => {
         const order_number = Math.floor(100 + Math.random() * 900);
         window.alert(`Your order ${order_number} has been processed!`);
     } else {
-        window.alert('Save the money, you\'re almost broke!');
+        window.alert('Save the money, you poor thing..');
     }
 });
 
