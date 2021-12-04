@@ -1,0 +1,145 @@
+@import 'base/reset';
+@import 'variables';
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: $pale-blue;
+    background-size: cover;
+    font-family: $red-hat-display;
+
+    .img-bg-desktop {
+        width: 100%;
+        position: absolute;
+    }
+}
+
+.card {
+    width: 90%;
+    max-width: 375px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 2.5rem;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    img {
+        max-width: 100%;
+    }
+
+    .card-img-top {
+        border-top-left-radius: 2.5rem;
+        border-top-right-radius: 2.5rem;
+    }
+
+    .card-body {
+        padding: 2.5rem;
+
+        h1,
+        p {
+            margin-bottom: 2.5rem;
+            text-align: center;
+        }
+
+        .order-plan {
+            padding: 1.5rem;
+            margin-bottom: 2.5rem;
+            background: $very-pale-blue;
+            border-radius: 1rem;
+
+            img {
+                margin-right: 1.8rem;
+            }
+
+            h2,
+            h2 > span {
+                font-size: 1.4rem;
+                font-weight: 700;
+            }
+
+            .btn-change {
+                font-size: 1.2rem;
+                font-weight: 700;
+                text-decoration: underline;
+            }
+        }
+
+        .btn-purchase,
+        .btn-cancelOrder {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 900;
+            letter-spacing: .05rem;
+            text-align: center;
+        }
+
+        .btn-purchase {
+            padding: 1.5rem 6rem;
+            margin-bottom: 2.5rem;
+            background: $bright-blue;
+            border-radius: 1rem;
+            box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+            color: #fff;
+        }
+
+        .btn-cancelOrder {
+            color: $desaturated-blue;
+        }
+    }
+}
+
+
+//
+// Typography
+//
+span, p {
+    color: $desaturated-blue;
+}
+
+h1 {
+    font-size: 2.1rem;
+    font-weight: 900;
+}
+
+p {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+//
+// Utility class
+//
+.d-flex {
+    display: flex;
+
+    &.jc-sb {
+        justify-content: space-between;
+    }
+
+    &.ai-c {
+        align-items: center;
+    }
+}
+
+.mobile-hide {
+    display: none; // Hide in mobile view
+}
+
+//
+// Media queries
+//
+@media screen and (min-width: 768px) {
+    .card {
+        box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px, rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    }
+
+    .desktop-hide {
+        display: none; // Hide in desktop view
+    }
+
+    .mobile-hide {
+        display: block; // Display in desktop view
+    }
+}

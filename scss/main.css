@@ -1,0 +1,153 @@
+/* http://meyerweb.com/eric/tools/css/reset/     
+   v2.0 | 20110126    
+   License: none (public domain) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 10px;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #e0e8ff;
+  background-size: cover;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body .img-bg-desktop {
+  width: 100%;
+  position: absolute;
+}
+
+.card {
+  width: 90%;
+  max-width: 375px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 2.5rem;
+  -webkit-box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+          box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card .card-img-top {
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
+}
+
+.card .card-body {
+  padding: 2.5rem;
+}
+
+.card .card-body h1,
+.card .card-body p {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.card .card-body .order-plan {
+  padding: 1.5rem;
+  margin-bottom: 2.5rem;
+  background: #f5f7ff;
+  border-radius: 1rem;
+}
+
+.card .card-body .order-plan img {
+  margin-right: 1.8rem;
+}
+
+.card .card-body .order-plan h2,
+.card .card-body .order-plan h2 > span {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.card .card-body .order-plan .btn-change {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.card .card-body .btn-purchase,
+.card .card-body .btn-cancelOrder {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: .05rem;
+  text-align: center;
+}
+
+.card .card-body .btn-purchase {
+  padding: 1.5rem 6rem;
+  margin-bottom: 2.5rem;
+  background: #3829e0;
+  border-radius: 1rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+          box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  color: #fff;
+}
+
+.card .card-body .btn-cancelOrder {
+  color: #7280a7;
+}
+
+span, p {
+  color: #7280a7;
+}
+
+h1 {
+  font-size: 2.1rem;
+  font-weight: 900;
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.d-flex.jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.d-flex.ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile-hide {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    -webkit-box-shadow: blue 0px 0px 0px 2px inset, white 10px -10px 0px -3px, #1fc11b 10px -10px, white 20px -20px 0px -3px, #ffd913 20px -20px, white 30px -30px 0px -3px, #ff9c55 30px -30px, white 40px -40px 0px -3px, #ff5555 40px -40px, rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+            box-shadow: blue 0px 0px 0px 2px inset, white 10px -10px 0px -3px, #1fc11b 10px -10px, white 20px -20px 0px -3px, #ffd913 20px -20px, white 30px -30px 0px -3px, #ff9c55 30px -30px, white 40px -40px 0px -3px, #ff5555 40px -40px, rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  }
+  .desktop-hide {
+    display: none;
+  }
+  .mobile-hide {
+    display: block;
+  }
+}
+/*# sourceMappingURL=main.css.map */
