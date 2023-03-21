@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/order-summary-component-WP0kYuycV]
-- Live Site URL: [https://jiale456.github.io/order-summary-component-main/]
+- Live Site URL: [https://jialeee17.github.io/order-summary-component-main/]
 
 ## My process
 
